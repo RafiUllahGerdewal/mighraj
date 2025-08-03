@@ -1,151 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Al Madina Auto Store - Vehicle Parts & Oil</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">Al Madina Auto Store</div>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدینه موټرو پلورنځی - د موټرو خدمتونه</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#dc2626',
+                        accent: '#f59e0b'
+                    },
+                    fontFamily: {
+                        'pashto': ['Noto Naskh Arabic', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Naskh Arabic', serif;
+        }
+        .rtl {
+            direction: rtl;
+            text-align: right;
+        }
+        .ltr {
+            direction: ltr;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 rtl">
+
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <i class="fas fa-car text-3xl text-primary"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary font-pashto">المدینه موټرو پلورنځی</h1>
+                        <p class="text-sm text-gray-600 font-pashto">ستاسې د موټر د ژوند ملاتړ</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 space-x-reverse">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors font-pashto">خدمتونه</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors font-pashto">اړیکه</a>
+                    <a href="tel:+93765248595" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-pashto">
+                        <i class="fas fa-phone ml-2"></i>همدا اوس زنګ ووهئ
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-      <section id="home" class="hero">
-        <div class="container">
-          <h1>المدینه روغنیات پلورنځي</h1>
-          <h1>Premium Auto Parts & Engine Oil</h1>
-
-          <p>Your trusted partner for vehicle maintenance and spare parts</p>
-          <a href="#contact" class="cta-button">Order Now</a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-blue-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 font-pashto">
+                    <span class="block">ستاسې د موټر د ژوند ملاتړ</span>
+                    <span class="text-2xl md:text-3xl font-normal opacity-90">د افغانستان ترټولو غوره د موټرو خدمتونه</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 font-pashto font-bold tracking-wide" style="font-family: 'Amiri', 'Noto Naskh Arabic', serif; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                    له ۱۹۹۹ کال راهیسې د موټرو د ترمیم او سپیر پارټونو په برخه کې تجربه
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div class="flex items-center space-x-2 space-x-reverse bg-white bg-opacity-20 px-6 py-3 rounded-lg">
+                        <i class="fas fa-clock"></i>
+                        <span class="font-pashto">له ۷ بجو څخه تر ۷ پورې، له شنبې تر پنجشنبې</span>
+                    </div>
+                    <div class="flex items-center space-x-2 space-x-reverse bg-white bg-opacity-20 px-6 py-3 rounded-lg">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="font-pashto">کابل، افغانستان</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="products" class="section">
-        <div class="container">
-          <h2>Our Products</h2>
-          <div class="products-grid">
-            <div class="product-card new-arrival">
-              <h3>Premium Engine Oil</h3>
-              <p>
-                High-quality synthetic and semi-synthetic engine oils for all
-                vehicle types
-              </p>
-              <div class="price">Starting from ₹500</div>
-              <p><strong>Brands:</strong> Castrol, Mobil, Shell, Total</p>
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 font-pashto">زموږ خدمتونه</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto font-pashto">
+                    بشپړ د موټرو د ترمیم خدمتونه د ټولو ډول موټرو لپاره. 
+                    مسلکي خدمتونه د مناسبو نرخونو سره.
+                </p>
             </div>
 
-            <div class="product-card">
-              <h3>Brake Parts</h3>
-              <p>
-                Complete brake system components including pads, discs, and
-                brake fluid
-              </p>
-              <div class="price">Starting from ₹800</div>
-              <p><strong>For:</strong> Cars, Bikes, Trucks</p>
+            <div id="services-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Services will be loaded dynamically from JSON -->
             </div>
-
-            <div class="product-card new-arrival">
-              <h3>Air & Oil Filters</h3>
-              <p>
-                Genuine and aftermarket filters for optimal engine performance
-              </p>
-              <div class="price">Starting from ₹200</div>
-              <p><strong>Types:</strong> Air, Oil, Fuel, Cabin filters</p>
-            </div>
-
-            <div class="product-card">
-              <h3>Spark Plugs & Ignition</h3>
-              <p>High-performance spark plugs and ignition system components</p>
-              <div class="price">Starting from ₹150</div>
-              <p><strong>Brands:</strong> NGK, Bosch, Denso</p>
-            </div>
-
-            <div class="product-card">
-              <h3>Suspension Parts</h3>
-              <p>Shock absorbers, springs, and suspension components</p>
-              <div class="price">Starting from ₹1200</div>
-              <p><strong>Quality:</strong> OEM & Aftermarket</p>
-            </div>
-
-            <div class="product-card new-arrival">
-              <h3>Batteries & Electrical</h3>
-              <p>Car batteries, alternators, and electrical accessories</p>
-              <div class="price">Starting from ₹2500</div>
-              <p><strong>Warranty:</strong> Up to 3 years</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="contact" class="section contact-section">
-        <div class="container">
-          <h2>Contact Us for Orders</h2>
-          <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem">
-            Call or WhatsApp us for immediate assistance and bulk orders
-          </p>
-
-          <div class="contact-grid">
-            <div class="contact-card">
-              <h3>Sales Manager</h3>
-              <div class="phone-number">📞 +91 98765 43210</div>
-              <p>For all product inquiries and orders</p>
-              <a href="https://wa.me/919876543210" class="whatsapp-link"
-                >WhatsApp Now</a
-              >
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 font-pashto">موږ سره اړیکه ونیسئ</h2>
+                <p class="text-xl text-gray-600 font-pashto">
+                    د مسلکي د موټرو خدمتونو لپاره موږ سره اړیکه ونیسئ
+                </p>
             </div>
 
-            <div class="contact-card">
-              <h3>Store Owner</h3>
-              <div class="phone-number">📞 +93 76 524 8595</div>
-              <p>For bulk orders and business inquiries</p>
-              <a href="https://wa.me/918765432109" class="whatsapp-link"
-                >WhatsApp Now</a
-              >
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Phone Contact -->
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="bg-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-phone text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-pashto">موږ ته زنګ ووهئ</h3>
+                    <p class="text-gray-600 mb-4 font-pashto">د فوري مرستې لپاره</p>
+                    <a href="tel:+93765248595" class="text-2xl font-bold text-primary hover:text-blue-700 transition-colors">
+                        +93 76 524 8595
+                    </a>
+                </div>
+
+                <!-- WhatsApp Contact -->
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="bg-green-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-pashto">واټساپ</h3>
+                    <p class="text-gray-600 mb-4 font-pashto">د چټک پیغام خدمت</p>
+                    <a href="https://wa.me/93765248595" class="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors">
+                        +93 76 524 8595
+                    </a>
+                </div>
+
+                <!-- Location -->
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="bg-red-500 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-pashto">ځای</h3>
+                    <p class="text-gray-600 mb-4 font-pashto">زموږ کارګاه ته راشئ</p>
+                    <p class="text-lg text-gray-800 font-pashto">
+                        کابل، افغانستان<br>
+                        <span class="text-sm text-gray-600">اصلي کارګاه سیمه</span>
+                    </p>
+                </div>
             </div>
 
-            <div class="contact-card">
-              <h3>Technical Support</h3>
-              <div class="phone-number">📞 +91 76543 21098</div>
-              <p>For technical assistance and product guidance</p>
-              <a href="https://wa.me/917654321098" class="whatsapp-link"
-                >WhatsApp Now</a
-              >
+            <!-- Operating Hours -->
+            <div class="mt-12 bg-white rounded-xl shadow-lg p-8 text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 font-pashto">د کار وختونه</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center justify-center space-x-3 space-x-reverse">
+                        <i class="fas fa-clock text-primary text-xl"></i>
+                        <span class="text-lg font-pashto">له ۷:۰۰ بجو څخه تر ۷:۰۰ پورې</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3 space-x-reverse">
+                        <i class="fas fa-calendar text-primary text-xl"></i>
+                        <span class="text-lg font-pashto">له شنبې تر پنجشنبې</span>
+                    </div>
+                </div>
+                <p class="text-gray-600 mt-4 font-pashto">جمعه: د لمانځه لپاره بند</p>
             </div>
-          </div>
-
-          <div style="text-align: center; margin-top: 3rem">
-            <h3>Store Location</h3>
-            <p style="font-size: 1.1rem; margin-top: 1rem">
-              📍 Kart e Naw Buthkhak main road loya paktya insaf workshop
-              tagharoo stay , Kabul, Afghanistan <br />
-            </p>
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer>
-      <div class="container">
-        <p>
-          &copy; 2025 AutoCare Store. All rights reserved. | Quality parts,
-          trusted service
-        </p>
-      </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-pashto">المدینه موټرو پلورنځی</h3>
+                    <p class="text-gray-300 mb-4 font-pashto">
+                        <span class="font-bold" style="font-family: 'Amiri', serif; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">له ۱۹۹۹ کال راهیسې د موټرو د ترمیم او سپیر پارټونو په برخه کې تجربه.</span> 
+                        د افغانستان ترټولو باورمن د موټرو خدمتونه.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="https://www.facebook.com/almadinaautostore" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-pashto">چټک اړیکه</h3>
+                    <div class="space-y-2">
+                        <p class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span class="font-pashto">+93 76 524 8595</span>
+                        </p>
+                        <p class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span class="font-pashto">کابل، افغانستان</span>
+                        </p>
+                        <p class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fas fa-clock text-primary"></i>
+                            <span class="font-pashto">له ۷ بجو څخه تر ۷ پورې</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-pashto">خدمتونه</h3>
+                    <ul class="space-y-2 text-gray-300 font-pashto">
+                        <li>د تیلو بدلول</li>
+                        <li>د فلټر خدمتونه</li>
+                        <li>د غوړ خدمت</li>
+                        <li>د انجن تشویش</li>
+                        <li>د بریک خدمت</li>
+                        <li>د بشپړ موټر خدمت</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300 font-pashto">
+                    &copy; ۲۰۲۵ المدینه موټرو پلورنځی. ټول حقونه ساتل شوي. | 
+                    افغانستان کې د موټرو د ژوند ملاتړ
+                </p>
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/919876543210" class="floating-whatsapp">💬</a>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/93765248595" 
+       class="fixed bottom-6 left-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
 
+    <!-- Floating Call Button -->
+    <a href="tel:+93765248595" 
+       class="fixed bottom-6 left-20 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50">
+        <i class="fas fa-phone text-xl"></i>
+    </a>
+
+    <!-- Load JavaScript -->
     <script src="app.js"></script>
-  </body>
+</body>
 </html>

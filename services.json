@@ -1,0 +1,100 @@
+{
+  "storeInfo": {
+    "name": "المدینه موټرو پلورنځی",
+    "location": "کابل، افغانستان",
+    "phone": "+93 76 524 8595",
+    "whatsapp": "+93 76 524 8595",
+    "hours": "له ۷ بجو څخه تر ۷ پورې، له شنبې تر پنجشنبې",
+    "description": "له ۱۹۹۹ کال راهیسې د موټرو د ترمیم او سپیر پارټونو په برخه کې تجربه"
+  },
+  "services": [
+    {
+      "id": "oil-change",
+      "name": "د تیلو بدلول",
+      "description": "د انجن تیل بدلول د لوړ کیفیت ۲۰W-۵۰ تیل سره د غوره انجن د کار لپاره",
+      "price": 500,
+      "currency": "AFN",
+      "icon": "fas fa-oil-can",
+      "iconColor": "text-primary",
+      "bgColor": "bg-blue-100",
+      "vehicleTypes": ["دوه-څرخه", "درې-څرخه", "درن موټرونه"]
+    },
+    {
+      "id": "oil-filter",
+      "name": "د تیلو فلټر خدمت",
+      "description": "د تیلو فلټرونو د فشار هوا پاکول یا بشپړ بدلول",
+      "price": 150,
+      "currency": "AFN",
+      "icon": "fas fa-filter",
+      "iconColor": "text-secondary",
+      "bgColor": "bg-red-100",
+      "vehicleTypes": ["ټول د موټرو ډولونه"]
+    },
+    {
+      "id": "air-filter",
+      "name": "د هوا فلټر خدمت",
+      "description": "د فلټر غبار پاکول یا بشپړ بدلول د غوره انجن د ساه اخیستلو لپاره",
+      "price": 120,
+      "currency": "AFN",
+      "icon": "fas fa-wind",
+      "iconColor": "text-green-600",
+      "bgColor": "bg-green-100",
+      "vehicleTypes": ["ټول د موټرو ډولونه"]
+    },
+    {
+      "id": "grease-service",
+      "name": "د غوړ خدمت",
+      "description": "بشپړ چاسی غوړول او غوړ د ټولو حرکت کوونکو برخو ته",
+      "price": 300,
+      "currency": "AFN",
+      "icon": "fas fa-tools",
+      "iconColor": "text-accent",
+      "bgColor": "bg-yellow-100",
+      "vehicleTypes": ["ټول د موټرو ډولونه"]
+    },
+    {
+      "id": "engine-flushing",
+      "name": "د انجن تشویش",
+      "description": "د انجن ژور پاکول د غوښه او رسوبونو د لرې کولو لپاره د غوره کار لپاره",
+      "price": 800,
+      "currency": "AFN",
+      "icon": "fas fa-tint",
+      "iconColor": "text-purple-600",
+      "bgColor": "bg-purple-100",
+      "vehicleTypes": ["ټول د موټرو ډولونه"]
+    },
+    {
+      "id": "brake-oil-check",
+      "name": "د بریک تیل چیک",
+      "description": "د بریک مایع کچه چیک او اضافه کول د خوندي بریک کار لپاره",
+      "price": 100,
+      "currency": "AFN",
+      "icon": "fas fa-exclamation-triangle",
+      "iconColor": "text-orange-600",
+      "bgColor": "bg-orange-100",
+      "vehicleTypes": ["ټول د موټرو ډولونه"]
+    },
+    {
+      "id": "full-service",
+      "name": "د بشپړ موټر خدمت پیکج",
+      "description": "بشپړ د موټر خدمت شامل د تیلو بدلول، فلټر بدلول، غوړ خدمت، بریک چیک، او انجن معاینه. د بشپړ ترمیم لپاره غوره ارزښت.",
+      "price": 1000,
+      "currency": "AFN",
+      "icon": "fas fa-star",
+      "iconColor": "text-white",
+      "bgColor": "bg-gradient-to-r from-primary to-secondary",
+      "vehicleTypes": ["د ټولو د موټرو ډولونو لپاره بشپړ پیکج"],
+      "featured": true
+    }
+  ],
+  "contact": {
+    "phone": "+93 76 524 8595",
+    "whatsapp": "+93 76 524 8595",
+    "location": "کابل، افغانستان",
+    "operatingHours": {
+      "weekdays": "له ۷:۰۰ بجو څخه تر ۷:۰۰ پورې",
+      "days": "له شنبې تر پنجشنبې",
+      "friday": "جمعه: د لمانځه لپاره بند"
+    }
+  }
+} 
