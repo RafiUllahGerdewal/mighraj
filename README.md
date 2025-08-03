@@ -1,6 +1,6 @@
-# Al-Madina Auto Store - Web Brochure
+# Al-Madina Auto Services Web
 
-A responsive, mobile-first web brochure for Al-Madina Auto Store based in Afghanistan. This static website showcases all vehicle services offered for 2-wheelers, 3-wheelers, and trucks with full Pashto translation and RTL support.
+A responsive auto services web interface for Afghanistan-based shop using HTML5, Tailwind CSS, and Vanilla JavaScript with full Pashto translation and RTL support.
 
 ## 🚗 Features
 
@@ -11,14 +11,14 @@ A responsive, mobile-first web brochure for Al-Madina Auto Store based in Afghan
 - **Modern UI**: Clean, professional design with smooth animations
 - **Print-Ready**: Optimized for both digital and print formats
 - **Pashto Translation**: Complete Pashto translation with RTL support
-- **Proper Font Support**: Noto Naskh Arabic font for Pashto script
+- **Proper Font Support**: Noto Naskh Arabic and Amiri fonts for Pashto script
 
 ## 🌐 Language Support
 
 ### Pashto Translation
 - **Complete Localization**: All text translated to Eastern Pashto (Kabul/Nangarhar dialect)
 - **RTL Support**: Right-to-left text direction for Pashto
-- **Font Optimization**: Noto Naskh Arabic font for proper Pashto rendering
+- **Font Optimization**: Noto Naskh Arabic and Amiri fonts for proper Pashto rendering
 - **Cultural Adaptation**: Uses commonly understood terms for mechanics and locals
 
 ### Marketing Message
@@ -49,7 +49,7 @@ A responsive, mobile-first web brochure for Al-Madina Auto Store based in Afghan
 - **Font Awesome**: Icons for services and UI elements
 - **Vanilla JavaScript**: Dynamic content loading
 - **JSON**: Data structure for services and contact info
-- **Noto Naskh Arabic**: Font for proper Pashto script rendering
+- **Noto Naskh Arabic & Amiri**: Fonts for proper Pashto script rendering
 
 ## 📁 Project Structure
 
@@ -64,9 +64,16 @@ mighraj/
 
 ## 🚀 Getting Started
 
-1. **Clone or Download** the project files
-2. **Open** `index.html` in a web browser
-3. **View** the responsive brochure in Pashto
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/RafiUllahGerdewal/mighraj.git
+   cd mighraj
+   ```
+
+2. **Open in browser**
+   ```bash
+   open index.html
+   ```
 
 ### Local Development
 
@@ -147,7 +154,7 @@ The website is fully responsive with breakpoints:
 ## 🎨 Design Features
 
 - **Color Scheme**: Professional blue and red theme
-- **Typography**: Noto Naskh Arabic for Pashto text
+- **Typography**: Noto Naskh Arabic and Amiri for Pashto text
 - **Icons**: Font Awesome icons for visual appeal
 - **Animations**: Smooth hover effects and transitions
 - **Cards**: Modern card-based layout for services
@@ -162,6 +169,44 @@ The website is fully responsive with breakpoints:
 - **Hours**: له ۷ بجو څخه تر ۷ پورې، له شنبې تر پنجشنبې
 - **Friday**: جمعه: د لمانځه لپاره بند
 - **Experience**: Since 1999 in vehicle repair and spare parts
+- **Facebook**: [Al-Madina Auto Store](https://www.facebook.com/almadinaautostore)
+
+## 🚀 Deployment
+
+This project is ready for deployment on various platforms:
+
+### Vercel
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Netlify
+1. Connect your GitHub repository
+2. Set build command: `none`
+3. Set publish directory: `.`
+4. Deploy
+
+### Firebase Hosting
+```bash
+# Install Firebase CLI
+npm install -g firebase-tools
+
+# Initialize Firebase
+firebase init hosting
+
+# Deploy
+firebase deploy
+```
+
+### GitHub Pages
+1. Go to repository Settings
+2. Navigate to Pages section
+3. Select source branch (main)
+4. Save
 
 ## 🔧 Customization
 
@@ -186,8 +231,9 @@ tailwind.config = {
 ```
 
 ### Fonts
-The website uses Noto Naskh Arabic for Pashto text:
-- **Pashto**: Noto Naskh Arabic (Google Fonts)
+The website uses multiple fonts for Pashto text:
+- **Primary**: Noto Naskh Arabic (Google Fonts)
+- **Secondary**: Amiri (Google Fonts)
 - **Fallback**: Serif fonts for better Pashto rendering
 
 ### RTL Styling
