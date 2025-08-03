@@ -1,6 +1,3 @@
-// Al-Madina Auto Store - Dynamic Content Loader
-// This file demonstrates how to load services from JSON and update the page dynamically
-
 class AlMadinaStore {
     constructor() {
         this.servicesData = null;
@@ -9,17 +6,13 @@ class AlMadinaStore {
 
     async init() {
         try {
-            // Load services data from JSON file
             const response = await fetch('services.json');
             this.servicesData = await response.json();
             
-            // Initialize the page
             this.updateServices();
             this.updateContactInfo();
-            
-            console.log('Al-Madina Auto Store loaded successfully!');
         } catch (error) {
-            console.error('Error loading store data:', error);
+            // Handle error silently
         }
     }
 
@@ -84,7 +77,6 @@ class AlMadinaStore {
         });
     }
 
-    // Method to update prices dynamically
     updateServicePrice(serviceId, newPrice) {
         if (!this.servicesData?.services) return;
         
@@ -92,26 +84,21 @@ class AlMadinaStore {
         if (service) {
             service.price = newPrice;
             this.updateServices();
-            console.log(`Updated price for ${service.name} to ${newPrice} ${service.currency}`);
         }
     }
 
-    // Method to add new service
     addService(newService) {
         if (!this.servicesData?.services) return;
         
         this.servicesData.services.push(newService);
         this.updateServices();
-        console.log(`Added new service: ${newService.name}`);
     }
 
-    // Method to remove service
     removeService(serviceId) {
         if (!this.servicesData?.services) return;
         
         this.servicesData.services = this.servicesData.services.filter(s => s.id !== serviceId);
         this.updateServices();
-        console.log(`Removed service with ID: ${serviceId}`);
     }
 }
 
@@ -120,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.alMadinaStore = new AlMadinaStore();
 });
 
-// Example usage functions for updating content
 function updateServicePrice(serviceId, newPrice) {
     if (window.alMadinaStore) {
         window.alMadinaStore.updateServicePrice(serviceId, newPrice);
@@ -137,9 +123,4 @@ function removeService(serviceId) {
     if (window.alMadinaStore) {
         window.alMadinaStore.removeService(serviceId);
     }
-}
-
-// Export for use in other scripts
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { AlMadinaStore, updateServicePrice, addNewService, removeService };
 }
